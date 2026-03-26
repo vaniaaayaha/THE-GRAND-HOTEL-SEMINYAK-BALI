@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Grand Seminyak</title>
+
+<style>
+html {scroll-behavior:smooth;}
+body {
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:#0b0b0b;
+color:white;
+}
+
+/* NAV */
+nav {
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.9);
+padding:15px;
+text-align:center;
+z-index:1000;
+}
+nav a {
+color:gold;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* HERO */
+header {
+height:100vh;
+background:url('https://images.unsplash.com/photo-1501117716987-c8e1ecb2101c?w=1600') center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+header h1 {font-size:60px;}
+header button {
+margin-top:20px;
+padding:12px;
+background:gold;
+border:none;
+font-weight:bold;
+}
+
+/* SECTION */
+section {
+padding:70px 20px;
+max-width:1100px;
+margin:auto;
+}
+h2 {
+text-align:center;
+color:gold;
+margin-bottom:40px;
+}
+
+/* GRID */
+.grid {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+/* CARD */
+.card {
+background:#1a1a1a;
+padding:20px;
+border-radius:12px;
+}
+.card img {
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+.price {color:gold;}
+
+/* FORM */
+form input, form textarea {
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:5px;
+}
+button {
+width:100%;
+padding:12px;
+background:gold;
+border:none;
+font-weight:bold;
+}
+
+/* FOOTER */
+footer {
+text-align:center;
+padding:30px;
+background:black;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="#rooms">Rooms</a>
+<a href="#dining">Dining</a>
+<a href="#events">Events</a>
+<a href="#services">Services</a>
+<a href="#booking">Booking</a>
+</nav>
+
+<header>
+<h1>The Grand Seminyak</h1>
+<p>Luxury Stay in Bali</p>
+<button onclick="document.getElementById('booking').scrollIntoView()">Book Now</button>
+</header>
+
+<!-- ROOMS -->
+<section id="rooms">
+<h2>Luxury Rooms</h2>
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800">
+<h3>Deluxe Room</h3>
+<p class="price">IDR 2.5M / night</p>
+<p>Ocean view, king bed, minibar, WiFi.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800">
+<h3>Executive Suite</h3>
+<p class="price">IDR 4.5M / night</p>
+<p>Living room, bathtub, premium service.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800">
+<h3>Private Villa</h3>
+<p class="price">IDR 8M / night</p>
+<p>Private pool, garden, luxury privacy.</p>
+</div>
+
+</div>
+</section>
+
+<!-- DINING -->
+<section id="dining">
+<h2>Dining</h2>
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800">
+<h3>Fine Dining</h3>
+<p>Wagyu steak, lobster, gourmet dishes.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800">
+<h3>Breakfast</h3>
+<p>Healthy & international menu.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800">
+<h3>Beach Bar</h3>
+<p>Cocktails & sunset vibes.</p>
+</div>
+
+</div>
+</section>
+
+<!-- EVENTS -->
+<section id="events">
+<h2>Events</h2>
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800">
+<h3>Wedding</h3>
+<p>Beach sunset wedding.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800">
+<h3>Romantic Dinner</h3>
+<p>Private candlelight dinner.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=800">
+<h3>Private Party</h3>
+<p>Luxury villa party.</p>
+</div>
+
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+<h2>Services</h2>
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800">
+<h3>Room Service</h3>
+<p>24h dining service.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800">
+<h3>Laundry</h3>
+<p>Fast cleaning service.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1597007030739-6d2e62f9d1d1?w=800">
+<h3>Buggy Car</h3>
+<p>Transport around resort.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=800">
+<h3>Tour Guide</h3>
+<p>Explore Bali easily.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800">
+<h3>Airport Transfer</h3>
+<p>Private luxury car.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800">
+<h3>Spa</h3>
+<p>Relaxing Balinese treatment.</p>
+</div>
+
+</div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking">
+<h2>Booking</h2>
+<form>
+<input type="text" placeholder="Name" required>
+<input type="email" placeholder="Email" required>
+<input type="date" required>
+<input type="date" required>
+<button>Book Now</button>
+</form>
+</section>
+
+<footer>
+<p>Seminyak, Bali | The Grand Hotel</p>
+</footer>
+
+</body>
+</html>
